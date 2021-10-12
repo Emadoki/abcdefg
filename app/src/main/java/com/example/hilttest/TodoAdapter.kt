@@ -29,6 +29,6 @@ class TodoAdapter: RecyclerView.Adapter<TodoViewHolder>() {
     fun setList(temp: List<TodoViewModel>) {
         list.clear()
         list.addAll(temp)
-        notifyDataSetChanged()
+        this.notifyDataSetChanged()
     }
 }
