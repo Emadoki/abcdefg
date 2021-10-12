@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding.viewModel = viewModel
         binding.lifecycleOwner = this
         setContentView(binding.root)
+        //comment 1
         setSupportActionBar(binding.toolbar)
 
         binding.fab.setOnClickListener {
