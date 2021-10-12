@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         binding.viewModel = viewModel
+        // comment 3
         binding.lifecycleOwner = this
         //comment 2
         setContentView(binding.root)
