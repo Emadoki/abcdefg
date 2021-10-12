@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         binding.viewModel = viewModel
         binding.lifecycleOwner = this
+        //comment 2
         setContentView(binding.root)
         //comment 1
         setSupportActionBar(binding.toolbar)
