@@ -20,13 +20,18 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         binding.viewModel = viewModel
+        // comment 3
         binding.lifecycleOwner = this
+        //comment 2
         setContentView(binding.root)
+        //comment 1
         setSupportActionBar(binding.toolbar)
 
         binding.fab.setOnClickListener {
             viewModel.loadTodoList()
         }
+        //comment 4
+        //comment 5
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
