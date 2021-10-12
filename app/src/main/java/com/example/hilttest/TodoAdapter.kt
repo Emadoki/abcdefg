@@ -25,11 +25,13 @@ class TodoAdapter: RecyclerView.Adapter<TodoViewHolder>() {
         holder.bind(list[position])
     }
 
-    override fun getItemCount() = list.size
+    override fun getItemCount(): Int {
+        return list.size
+    }
 
     fun setList(temp: List<TodoViewModel>) {
         list.clear()
         list.addAll(temp)
-        notifyDataSetChanged()
+        this.notifyDataSetChanged()
     }
 }
