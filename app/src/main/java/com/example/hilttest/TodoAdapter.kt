@@ -11,11 +11,12 @@ class TodoAdapter: RecyclerView.Adapter<TodoViewHolder>() {
     private val list = ArrayList<TodoViewModel>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
+        val flag = false
         return TodoViewHolder(
             ItemTodoBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
-                false
+                flag
             )
         )
     }
