@@ -12,6 +12,7 @@ class TodoAdapter: RecyclerView.Adapter<TodoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
         // pizza test 1
+        // pizza test 2
         val flag = false
         return TodoViewHolder(
             ItemTodoBinding.inflate(
