@@ -11,13 +11,13 @@ class TodoAdapter: RecyclerView.Adapter<TodoViewHolder>() {
     private val list = ArrayList<TodoViewModel>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
-
         // pizza test 1
+        val flag = false
         return TodoViewHolder(
             ItemTodoBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
-                false
+                flag
             )
         )
     }
@@ -26,7 +26,9 @@ class TodoAdapter: RecyclerView.Adapter<TodoViewHolder>() {
         holder.bind(list[position])
     }
 
-    override fun getItemCount() = list.size
+    override fun getItemCount(): Int {
+        return list.size
+    }
 
     fun setList(temp: List<TodoViewModel>) {
         list.clear()

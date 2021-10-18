@@ -24,6 +24,7 @@ object ApiModule {
     @Singleton
     @Provides
     fun provideRetrofit(httpClient: OkHttpClient): Retrofit {
+
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
