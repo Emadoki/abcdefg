@@ -11,5 +11,6 @@ class TodoViewHolder(private val binding: ItemTodoBinding): RecyclerView.ViewHol
         binding.setVariable(BR.todoViewModel, data)
         binding.executePendingBindings()
         // master
+        // master
     }
 }
