@@ -33,5 +33,6 @@ class TodoAdapter: RecyclerView.Adapter<TodoViewHolder>() {
         list.clear()
         list.addAll(temp)
         this.notifyDataSetChanged()
+        // master new
     }
 }
