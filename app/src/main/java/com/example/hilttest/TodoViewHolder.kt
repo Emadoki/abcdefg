@@ -12,5 +12,7 @@ class TodoViewHolder(private val binding: ItemTodoBinding): RecyclerView.ViewHol
         binding.executePendingBindings()
         // master
         // master
+        //sticker
+        // s2
     }
 }
