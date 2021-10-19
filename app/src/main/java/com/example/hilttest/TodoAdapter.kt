@@ -33,6 +33,7 @@ class TodoAdapter: RecyclerView.Adapter<TodoViewHolder>() {
     }
 
     fun setList(temp: List<TodoViewModel>) {
+        //burger
         list.clear()
         list.addAll(temp)
         this.notifyDataSetChanged()
