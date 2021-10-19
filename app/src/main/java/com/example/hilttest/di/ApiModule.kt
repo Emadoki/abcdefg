@@ -17,6 +17,7 @@ import javax.inject.Singleton
 object ApiModule {
     private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
+    //m1
     @Singleton
     @Provides
     fun providesHttpClient() = OkHttpClient.Builder().build()
