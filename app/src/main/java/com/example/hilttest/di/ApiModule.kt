@@ -18,6 +18,8 @@ object ApiModule {
     private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
     //m1
+    //promise
+    //promise2
     @Singleton
     @Provides
     fun providesHttpClient() = OkHttpClient.Builder().build()
